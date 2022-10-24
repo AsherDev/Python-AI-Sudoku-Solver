@@ -1,0 +1,65 @@
+Assignment Submission
+       Unit: cosc350
+ Assignment: a2
+   Username: bwatso25
+     Who is: Bryce Watson <bwatso25@myune.edu.au>
+       Date: Tue 13 Sep 2022 22:34:58 AEST
+----------------------------------------------------------------
+Files submitted:
+-rw-r--r--. 1 bwatso25 bwatso25 4.1K Sep 13 22:32 bwatso25.py
+-rw-r--r--. 1 bwatso25 bwatso25  212 Sep 13 22:32 readme.md
+----------------------------------------------------------------
+Script of session:
+Script started on 2022-09-13 22:34:26+10:00 [TERM="xterm-256color" TTY="/dev/pts/69" COLUMNS="299" LINES="17"]
+]0;bwatso25@turing:~/Desktop/2022 work/Cosc350/a2[?2004h[36m[[m[34mbwatso25@turing[m [32ma2[m[36m][m $ python bwatso25.py
+[?2004l
+COSC350 PROGRAMMING ASSIGNMENT 2- Python Sudoku Solver
+
+AUTHOR: Bryce Watson
+
+STUDENT NUMBER: 220199390
+
+UNE Account name: bwatso25
+
+ABOUT THE PROGRAM: When run, this program takes a hardcoded sudoku puzzle as a 2-Dimensional array and solves it using a Depth-First-Search algorithm.
+
+HOW THE ALGORITHM WORKS: The program finds an empty space on the board (0) by searching each row from left to right. e.g if the first row has no empty spaces then it moves to row 2.
+Once it finds an empty space, it tries numbers from 1-9 until it finds a number that appears to fit. Once it finds a number that appears to work, it moves on to the next empty space. If a valid number for the next space cannot be found,
+It backtracks to the previous space and continues trying numbers for that previous space. Once it finds another number that works for the previous space, it continues onto the next space. This repeats for the entire board until a solution is found.
+
+
+Sodoku Puzzle:
+
+9 0 0  | 1 7 0  | 4 0 2
+1 6 0  | 0 4 0  | 0 9 5
+0 0 8  | 0 0 3  | 0 0 0
+- - - - - - - - - - - - -
+0 1 0  | 9 0 0  | 5 7 3
+0 4 0  | 0 0 0  | 0 2 0
+5 8 9  | 0 0 7  | 0 1 0
+- - - - - - - - - - - - -
+0 0 0  | 4 0 0  | 7 0 0
+6 7 0  | 0 2 0  | 0 5 8
+3 0 1  | 0 5 8  | 0 0 6
+
+Solving the Puzzle...
+
+
+Solved Sudoku Puzzle:
+
+9 3 5  | 1 7 6  | 4 8 2
+1 6 7  | 8 4 2  | 3 9 5
+4 2 8  | 5 9 3  | 1 6 7
+- - - - - - - - - - - - -
+2 1 6  | 9 8 4  | 5 7 3
+7 4 3  | 6 1 5  | 8 2 9
+5 8 9  | 2 3 7  | 6 1 4
+- - - - - - - - - - - - -
+8 5 2  | 4 6 9  | 7 3 1
+6 7 4  | 3 2 1  | 9 5 8
+3 9 1  | 7 5 8  | 2 4 6
+]0;bwatso25@turing:~/Desktop/2022 work/Cosc350/a2[?2004h[36m[[m[34mbwatso25@turing[m [32ma2[m[36m][m $ e[Kexit
+[?2004lexit
+
+Script done on 2022-09-13 22:34:39+10:00 [COMMAND_EXIT_CODE="0"]
+2447
